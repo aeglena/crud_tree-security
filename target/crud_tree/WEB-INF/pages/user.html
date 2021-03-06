@@ -14,13 +14,12 @@
         <th>email</th>
     </tr>
     <tr>
-        <th th:text = "${user.getId()}">b</th>
-         <th th:text = "${user.getName()}">val</th>
-            <th th:text = "${user.getAge()}">val</th>
-            <th th:text = "${user.getEmail()}">val</th>
+        <th th:text="${user.getId()}">b</th>
+        <th th:text="${user.getName()}">val</th>
+        <th th:text="${user.getAge()}">val</th>
+        <th th:text="${user.getEmail()}">val</th>
     </tr>
 </table>
-<form th:method="DELETE" th:action="@{/{id}/delete (id=${user.getId()})}" />
-<input type="submit" value="DELETE" />
+<a href="/logout">LogOut</a>
 </body>
 </html>
